@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+/*
+* lang — Ru
+* author — NiktoX2
+* — https://vk.com/niktox2
+* team — Lost Summer Time
+* — https://vk.com/lost.summer.time
+*
+*
+*/
+
+@supports(width: clamp(200px, 95%, 1200px)){
+	.limit-size {
+		width: clamp(200px, 95%, 1200px);
+	}
+}
+
+@supports not (width: clamp(200px, 95%, 1200px)){
+	.limit-size {
+		max-width: 1200px;
+		width: 95%;
+		min-width: 200px;
+	}
+}

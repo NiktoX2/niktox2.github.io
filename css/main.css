@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+/*
+* lang — Ru
+* author — NiktoX2
+* — https://vk.com/niktox2
+* team — Lost Summer Time
+* — https://vk.com/lost.summer.time
+*
+*
+*/
+
+* {
+	height: fit-content;
+
+	margin: 0;
+	border-width: 0;
+	padding: 0;
+
+	box-sizing: border-box;
+
+	list-style: none;
+	text-decoration: none;
+
+	font-family: "Roboto", "Ubuntu", "Arial", sans-serif;
+	font-size: 1rem;
+	color: var(--color)
+}
+
+/**/
+
+html, body { min-width: 320px; min-height: 320px }
+
+html, body, main, .limit-size { height: 100% }
+
+body {
+	background-color: var(--background);
+	justify-content: center;
+}
+
+body, body * { display: flex }
+
+header, footer { padding: 1rem 0 }
+
+svg { fill: var(--icon) }
+
+/**/
+
+.hide { display: none }

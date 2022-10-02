@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+/*
+* lang — Ru
+* author — NiktoX2
+* — https://vk.com/niktox2
+* team — Lost Summer Time
+* — https://vk.com/lost.summer.time
+*
+*
+*
+	https://google-webfonts-helper.herokuapp.com/fonts/roboto?subsets=cyrillic,latin
+	Last modified 2022-05-11 (v30)
+*/
+@font-face {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	src: url("/fonts/roboto/400/roboto.eot"); /* IE9 Compat Modes */
+	src:
+		local("Roboto"),
+		local("Roboto-Regular"),
+		url("/fonts/roboto/400/roboto.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+		url("/fonts/roboto/400/roboto.woff2") format("woff2"), /* Super Modern Browsers | Chrome 26+, Opera 23+, Firefox 39+ */
+		url("/fonts/roboto/400/roboto.woff") format("woff"), /* Modern Browsers | Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+		url("/fonts/roboto/400/roboto.ttf") format("truetype"), /* Safari, Android, iOS */
+		url("/fonts/roboto/400/roboto.svg#Roboto") format("svg"); /* Legacy iOS */
+}
+@font-face {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 700;
+	src: url("/fonts/roboto/700/roboto.eot");
+	src:
+		local("Roboto"),
+		local("Roboto-Bold"),
+		url("/fonts/roboto/700/roboto.eot?#iefix") format("embedded-opentype"),
+		url("/fonts/roboto/700/roboto.woff2") format("woff2"),
+		url("/fonts/roboto/700/roboto.woff") format("woff"),
+		url("/fonts/roboto/700/roboto.ttf") format("truetype"),
+		url("/fonts/roboto/700/roboto.svg#Roboto") format("svg");
+}
+/*
+	https://google-webfonts-helper.herokuapp.com/fonts/ubuntu?subsets=cyrillic,latin
+	Last modified 2022-04-27 (v20)
+*/
+@font-face {
+	font-family: "Ubuntu";
+	font-style: normal;
+	font-weight: 400;
+	src: url("/fonts/ubuntu/400/ubuntu.eot");
+	src:
+		local("Ubuntu"),
+		local("Ubuntu-Regular"),
+		url("/fonts/ubuntu/400/ubuntu.eot?#iefix") format("embedded-opentype"),
+		url("/fonts/ubuntu/400/ubuntu.woff2") format("woff2"),
+		url("/fonts/ubuntu/400/ubuntu.woff") format("woff"),
+		url("/fonts/ubuntu/400/ubuntu.ttf") format("truetype"),
+		url("/fonts/ubuntu/400/ubuntu.svg#Ubuntu") format("svg");
+}
+@font-face {
+	font-family: "Ubuntu";
+	font-style: normal;
+	font-weight: 700;
+	src: url("/fonts/ubuntu/700/ubuntu.eot");
+	src:
+		local("Ubuntu"),
+		local("Ubuntu-Bold"),
+		url("/fonts/ubuntu/700/ubuntu.eot?#iefix") format("embedded-opentype"),
+		url("/fonts/ubuntu/700/ubuntu.woff2") format("woff2"),
+		url("/fonts/ubuntu/700/ubuntu.woff") format("woff"),
+		url("/fonts/ubuntu/700/ubuntu.ttf") format("truetype"),
+		url("/fonts/ubuntu/700/ubuntu.svg#Ubuntu") format("svg");
+}

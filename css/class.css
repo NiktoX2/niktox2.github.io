@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+/*
+* lang — Ru
+* author — NiktoX2
+* — https://vk.com/niktox2
+* team — Lost Summer Time
+* — https://vk.com/lost.summer.time
+*
+*
+*/
+
+.p1rem { padding: 1rem }
+.m1rem { margin: 1rem }
+
+.radius1rem { border-radius: 1rem }
+
+.icon1rem, .icon1rem > svg { width: 1rem; height: 1rem }
+.icon1-5rem, .icon1-5rem > svg { width: 1.5rem; height: 1.5rem }
+.icon2rem, .icon2rem > svg { width: 2rem; height: 2rem }
+
+.direction-column { flex-direction: column }
+
+/**/
+
+.avatar {
+	margin-right: 1rem;
+	flex-direction: column;
+}
+
+.avatar__bg {
+	width: 18rem;
+	height: 22rem;
+	padding: 1rem;
+	border-radius: 1rem;
+	background-color: var(--dark-item);
+}
+
+.avatar__image {
+	width: 100%;
+	height: 100%;
+	border-radius: 0.5rem;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url('/images/avatar/NiktoX2.jpg');
+}
+
+.avatar__website {
+	margin-top: 1rem;
+	padding: 1rem;
+	border-radius: 1rem;
+	background-color: var(--dark-item);
+}
+
+/**/
+
+.info {
+	width: 100%;
+	margin-left: 1rem;
+	flex-direction: column;
+}
+
+.info > div {
+	padding: 1rem;
+	border-radius: 1rem;
+	background-color: var(--dark-item);
+}
+
+.info > div:nth-child(n+2) {
+	margin-top: 1rem;
+}
+
+.info__name {}
+
+.info__about {}
+
+.indo__activity {
+	flex-direction: column;
+}
+
+.indo__plans {
+	flex-direction: column;
+}
+
+.info__movies {
+	flex-direction: column;
+}
+
+/**/

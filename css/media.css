@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+/*
+* lang — Ru
+* author — NiktoX2
+* — https://vk.com/niktox2
+* team — Lost Summer Time
+* — https://vk.com/lost.summer.time
+*
+*
+*/
+
+@media screen and (max-width: 725px) {
+	main {
+		height: fit-content;
+		flex-direction: column;
+		align-items: center;
+	}
+	.avatar, .info { margin: 0 }
+	.info { margin-top: 1rem }
+}

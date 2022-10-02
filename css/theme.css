@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+/*
+* lang — Ru
+* author — NiktoX2
+* — https://vk.com/niktox2
+* team — Lost Summer Time
+* — https://vk.com/lost.summer.time
+*
+*
+*/
+
+:root {
+	--white: rgb(255, 255, 255); /* fff */
+	--black: rgb(0, 0, 0); /* 000 */
+	--dark: rgb(32, 32, 32); /* 202020 */
+	--dark-item: rgb(42, 42, 42);
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--background: var(--dark);
+		--color: var(--white);
+		--icon: var(--white);
+	}
+
+	*::selection {
+		background-color: var(--color);
+		color: var(--background);
+	}
+}
+@media (prefers-color-scheme: light) {
+	:root {
+		--background: var(--white);
+		--color: var(--black);
+		--icon: var(--black);
+	}
+
+	*::selection {
+		background-color: var(--color);
+		color: var(--background);
+	}
+}
+
+
+
+html[data-theme=""], html[data-theme="white"], html[data-theme="light"] {
+	--background: var(--white);
+	--color: var(--black);
+	--icon: var(--black)
+}
+
+html[data-theme="black"] {
+	--background: var(--black);
+	--color: var(--white);
+	--icon: var(--white)
+}
+
+html[data-theme="dark"] {
+	--background: var(--dark);
+	--color: var(--white);
+	--icon: var(--white)
+}
+
+html[data-theme="dark_gr"] {
+	--background: var(--dark);
+	--color: var(--grey);
+	--icon: var(--grey)
+}
