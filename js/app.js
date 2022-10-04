@@ -9,3 +9,9 @@
 */
 
 window.ondragstart = () => { return false };
+
+document.querySelector(".info__slider").querySelectorAll("li").forEach( (item) => {
+	item.addEventListener("click", () => {
+		document.querySelector("#avatar").style.backgroundImage = item.querySelector("span").style.backgroundImage;
+	})
+} )

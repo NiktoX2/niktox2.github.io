@@ -37,13 +37,14 @@ xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 	<link rel="stylesheet" href="/css/supports.css">
 	<link rel="stylesheet" href="/css/class.css">
 	<link rel="stylesheet" href="/css/media.css">
+	<link rel="stylesheet" href="/css/scrollbar.css">
 	<style></style>
 
 	<script src="/js/app.js" defer></script>
 	<script></script>
 </head>
 <body>
-	<div class="direction-column limit-size">
+	<div class="fColumn limit-size">
 		<header>
 			<ul>
 				<li>
@@ -63,7 +64,7 @@ xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 		<main>
 			<div class="avatar">
 				<div class="avatar__bg">
-					<span class="avatar__image"></span>
+					<span class="avatar__image" id="avatar"></span>
 				</div>
 
 				<div class="avatar__website">
@@ -72,6 +73,14 @@ xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 							<a href="https://vk.com/niktox2" target="_blank">
 								<i class="icon1-5rem">
 									<svg><use xlink:href="#svgIconVK"></use></svg>
+								</i>
+							</a>
+						</li>
+
+						<li>
+							<a href="https://steamcommunity.com/id/niktox2" target="_blank">
+								<i class="icon1-5rem">
+									<svg><use xlink:href="#svgIconSteam"></use></svg>
 								</i>
 							</a>
 						</li>
@@ -84,14 +93,32 @@ xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 					<h6 style="font-size: 1.5rem;">Мустафин Руслан | NiktoX2</h6>
 				</div>
 
+				<div class="info__slider">
+					<button></button>
+
+					<div>
+						<ul class="absolute">
+							<li>
+								<span style="background-image: url('/images/avatar/NiktoX2.jpg');"></span>
+							</li>
+
+							<li>
+								<span style="background-image: url('/images/avatar/avatar.jpg');"></span>
+							</li>
+						</ul>
+					</div>
+
+					<button></button>
+				</div>
+
 				<div class="info__about">
-					<ul class="direction-column">
+					<ul class="fColumn ulMTop05rem">
 						<li>
 							<p>Другие имена: Руся / Никто / Лис / Лисенок</p>
 						</li>
 
 						<li>
-							<p>Возраст: 19</p>
+							<p>Возраст: 19 лет</p>
 						</li>
 
 						<li>
@@ -99,11 +126,15 @@ xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 						</li>
 
 						<li>
-							<p>Знак задиака: Телец</p>
+							<p>Знак зодиака: Телец</p>
 						</li>
 
 						<li>
 							<p>Родной город: В московской облости</p>
+						</li>
+
+						<li>
+							<p>Родной язык: Русский</p>
 						</li>
 
 						<li>
@@ -112,50 +143,94 @@ xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 					</ul>
 				</div>
 
-				<div class="indo__activity">
-					<h6 style="font-size: 1.25rem;">Деятельность (приостановлена)</h6>
+				<div class="indo__activity fColumn">
+					<h6>Деятельность (приостановлена)</h6>
 
-					<ul class="direction-column" style="margin-top: 0.5rem;">
+					<ul class="fColumn mTop05rem ulMTop05rem">
 						<li>
 							<p>Основатель Lost Summer Time</p>
 						</li>
+
 						<li>
 							<p>Развитие группы VK</p>
 						</li>
+
 						<li>
 							<p>Развитие Discord сервера</p>
 						</li>
-						<li>
-							<p>Писатель</p>
-						</li>
-						<li>
-							<p>Изучает психологию, написание программу и сайтов, фото и видео редактирование</p>
-						</li>
-					</ul>
-				</div>
 
-				<div class="indo__plans">
-					<h6 style="font-size: 1.25rem;">Планы (приостановлены)</h6>
-
-					<ul class="direction-column" style="margin-top: 0.5rem;">
 						<li>
-							<p>Разработать свой язык</p>
+							<p>Писательство</p>
 						</li>
 
 						<li>
-							<p>Написать книгу (нюансы)</p>
+							<p>Изучение психологии, написание программ и сайтов, фото и видео редактирование, 3д моделирование, написание музыки</p>
 						</li>
 					</ul>
 				</div>
 
-				<div class="info__movies hide">
-					<h6 style="font-size: 1.25rem;">Любимые фильмы</h6>
+				<div class="indo__plans fColumn">
+					<h6>Планы (приостановлены)</h6>
 
-					<ul class="direction-column">
+					<ul class="fColumn mTop05rem ulMTop05rem">
+						<li>
+							<p>Написать личный и Lost Summer Time сайт</p>
+						</li>
+
+						<li>
+							<p>Написать книгу</p>
+						</li>
+
+						<li>
+							<p>Создать сервер minecraft</p>
+						</li>
+
+						<li>
+							<p>Написать музыку</p>
+						</li>
+
+						<li>
+							<p>Разработать свой язык програмирования</p>
+						</li>
+
+						<li>
+							<p>Создать свою игру</p>
+						</li>
+
+						<li>
+							<p>Создать свою ОС</p>
+						</li>
+					</ul>
+				</div>
+
+				<div class="info__music fColumn">
+					<h6>Любимая музыка</h6>
+
+					<ul class="fColumn mTop05rem">
+						<li style="align-items: center;">
+							<p>Чернила — Thomas Mraz</p>
+
+							<ul class="fColumn" style="margin-left: 0.5rem;">
+								<li>
+									<a href="https://vk.com/search?c%5Bname%5D=0&c%5Bq%5D=%D0%A7%D0%B5%D1%80%D0%BD%D0%B8%D0%BB%D0%B0%20%E2%80%94%20Thomas%20Mraz&c%5Bsection%5D=audio" target="_blank">
+										<i class="icon1-5rem">
+											<svg><use xlink:href="#svgIconVK"></use></svg>
+										</i>
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+
+				<div class="info__movies fColumn">
+					<h6>Любимые фильмы</h6>
+
+					<ul class="fColumn mTop05rem">
 						<li style="align-items: center;">
 							<p>Железный человек</p>
 
-							<ul style="margin-left: 0.5rem;">
+							<ul class="fColumn" style="margin-left: 0.5rem;">
 								<li>
 									<a href="https://www.kinopoisk.ru/film/61237/" target="_blank">
 										<i class="icon1-5rem">
@@ -163,50 +238,35 @@ xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 										</i>
 									</a>
 								</li>
-
-								<li>
-									<a href="" target="_blank">
-										<i class="icon1-5rem">
-											<svg><use xlink:href="#svgIcon"></use></svg>
-										</i>
-									</a>
-								</li>
-							</ul>
-						</li>
-
-						<li>
-							<p></p>
-
-							<ul>
-								<li>
-									<a href="" target="_blank">
-										<i class="icon1-5rem">
-											<svg><use xlink:href="#svgIcon"></use></svg>
-										</i>
-									</a>
-								</li>
 							</ul>
 						</li>
 					</ul>
 				</div>
 
-				<div class="info__ hide"></div>
+				<div class="info__anime fColumn">
+					<h6>Любимое аниме</h6>
 
-				<div class="info__ hide"></div>
+					<ul class="fColumn mTop05rem ulMTop05rem">
+						<li>
+							<p>Аватар короля</p>
+						</li>
 
-				<div class="info__anime hide"></div>
-
-				<div class="info__ hide"></div>
+						<li>
+							<p>Агент времени</p>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</main>
 
 		<footer>
-			<ul class="direction-column">
+			<ul class="fColumn">
 				<li>
-					<p>V1.0</p>
+					<p>V1.0.1</p>
 				</li>
+
 				<li>
-					<p>Первая попытка</p>
+					<p>В разработке</p>
 				</li>
 			</ul>
 		</footer>
@@ -231,8 +291,8 @@ xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 			<symbol id="svgIconVK" viewBox="0 0 24 24" width="100%" height="100%">
 				<path d="m9.489.004.729-.003h3.564l.73.003.914.01.433.007.418.011.403.014.388.016.374.021.36.025.345.03.333.033c1.74.196 2.933.616 3.833 1.516.9.9 1.32 2.092 1.516 3.833l.034.333.029.346.025.36.02.373.025.588.012.41.013.644.009.915.004.98-.001 3.313-.003.73-.01.914-.007.433-.011.418-.014.403-.016.388-.021.374-.025.36-.03.345-.033.333c-.196 1.74-.616 2.933-1.516 3.833-.9.9-2.092 1.32-3.833 1.516l-.333.034-.346.029-.36.025-.373.02-.588.025-.41.012-.644.013-.915.009-.98.004-3.313-.001-.73-.003-.914-.01-.433-.007-.418-.011-.403-.014-.388-.016-.374-.021-.36-.025-.345-.03-.333-.033c-1.74-.196-2.933-.616-3.833-1.516-.9-.9-1.32-2.092-1.516-3.833l-.034-.333-.029-.346-.025-.36-.02-.373-.025-.588-.012-.41-.013-.644-.009-.915-.004-.98.001-3.313.003-.73.01-.914.007-.433.011-.418.014-.403.016-.388.021-.374.025-.36.03-.345.033-.333c.196-1.74.616-2.933 1.516-3.833.9-.9 2.092-1.32 3.833-1.516l.333-.034.346-.029.36-.025.373-.02.588-.025.41-.012.644-.013.915-.009ZM6.79 7.3H4.05c.13 6.24 3.25 9.99 8.72 9.99h.31v-3.57c2.01.2 3.53 1.67 4.14 3.57h2.84c-.78-2.84-2.83-4.41-4.11-5.01 1.28-.74 3.08-2.54 3.51-4.98h-2.58c-.56 1.98-2.22 3.78-3.8 3.95V7.3H10.5v6.92c-1.6-.4-3.62-2.34-3.71-6.92Z"/>
 			</symbol>
-			<symbol id="svgIcon" viewBox="0 0 24 24" width="100%" height="100%">
-				<path d=""/>
+			<symbol id="svgIconSteam" viewBox="0 0 24 24" width="100%" height="100%">
+				<path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658c.545-.371 1.203-.59 1.912-.59.063 0 .125.004.188.006l2.861-4.142V8.91c0-2.495 2.028-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.105.004.159 0 1.875-1.515 3.396-3.39 3.396-1.635 0-3.016-1.173-3.331-2.727L.436 15.27C1.862 20.307 6.486 24 11.979 24c6.627 0 11.999-5.373 11.999-12S18.605 0 11.979 0zM7.54 18.21l-1.473-.61c.262.543.714.999 1.314 1.25 1.297.539 2.793-.076 3.332-1.375.263-.63.264-1.319.005-1.949s-.75-1.121-1.377-1.383c-.624-.26-1.29-.249-1.878-.03l1.523.63c.956.4 1.409 1.5 1.009 2.455-.397.957-1.497 1.41-2.454 1.012H7.54zm11.415-9.303c0-1.662-1.353-3.015-3.015-3.015-1.665 0-3.015 1.353-3.015 3.015 0 1.665 1.35 3.015 3.015 3.015 1.663 0 3.015-1.35 3.015-3.015zm-5.273-.005c0-1.252 1.013-2.266 2.265-2.266 1.249 0 2.266 1.014 2.266 2.266 0 1.251-1.017 2.265-2.266 2.265-1.253 0-2.265-1.014-2.265-2.265z"/>
 			</symbol>
 <!--
 	icon kinopoisk

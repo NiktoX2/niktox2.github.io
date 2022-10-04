@@ -13,13 +13,20 @@
 .p1rem { padding: 1rem }
 .m1rem { margin: 1rem }
 
+.pTop05rem { padding-top: 0.5rem }
+.mTop05rem { margin-top: 0.5rem }
+
+.ulMTop05rem > li:nth-child(n + 2) { margin-top: 0.5rem }
+
+.absolute { position: absolute }
+
 .radius1rem { border-radius: 1rem }
 
 .icon1rem, .icon1rem > svg { width: 1rem; height: 1rem }
 .icon1-5rem, .icon1-5rem > svg { width: 1.5rem; height: 1.5rem }
 .icon2rem, .icon2rem > svg { width: 2rem; height: 2rem }
 
-.direction-column { flex-direction: column }
+.fColumn { flex-direction: column }
 
 /**/
 
@@ -40,10 +47,7 @@
 	width: 100%;
 	height: 100%;
 	border-radius: 0.5rem;
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-image: url('/images/avatar/NiktoX2.jpg');
+	background-image: url("/images/avatar/NiktoX2.jpg");
 }
 
 .avatar__website {
@@ -51,6 +55,11 @@
 	padding: 1rem;
 	border-radius: 1rem;
 	background-color: var(--dark-item);
+	justify-content: center;
+}
+
+.avatar__website li:nth-child(2n) {
+	margin-left: 1rem;
 }
 
 /**/
@@ -71,20 +80,24 @@
 	margin-top: 1rem;
 }
 
-.info__name {}
 
-.info__about {}
-
-.indo__activity {
-	flex-direction: column;
+.info__slider button {
+	display: none;
 }
 
-.indo__plans {
-	flex-direction: column;
+.info__slider div {
+	width: 100%;
+	height: 11.5rem;
+	overflow-x: scroll;
+	overflow-y: hidden;
 }
 
-.info__movies {
-	flex-direction: column;
+.info__slider li:nth-child(n + 2) {
+	margin-left: 1rem;
 }
 
-/**/
+.info__slider span {
+	height: 10rem;
+	width: 14rem;
+	border-radius: 0.5rem;
+}
