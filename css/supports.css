@@ -11,13 +11,13 @@
 */
 
 @supports(width: clamp(200px, 95%, 1200px)){
-	.limit-size {
+	.limitSize {
 		width: clamp(200px, 95%, 1200px);
 	}
 }
 
 @supports not (width: clamp(200px, 95%, 1200px)){
-	.limit-size {
+	.limitSize {
 		max-width: 1200px;
 		width: 95%;
 		min-width: 200px;

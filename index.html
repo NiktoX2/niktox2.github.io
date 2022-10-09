@@ -29,32 +29,40 @@ xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
 	<meta name="twitter:creator" content="@LostSummerTime">
 
-	<link rel="icon" type="image/png" href="/favicons/32x32.png?v1.0.2" id="favicon">
+	<link rel="icon" id="favicon" href="/favicons/32x32.png?v1.0.2" type="image/png">
 
 	<link rel="manifest" href="/manifest.webmanifest?v1.0.2">
 
 	<link rel="stylesheet" href="/css/theme.css?v1.0.2">
 	<link rel="stylesheet" href="/css/fonts.css?v1.0.2">
 	<link rel="stylesheet" href="/css/main.css?v1.0.2">
-	<link rel="stylesheet" href="/css/supports.css?v1.0.2">
-	<link rel="stylesheet" href="/css/class.css?v1.0.2">
+	<link rel="stylesheet" href="/css/supports.css?v1.0.3">
+	<link rel="stylesheet" href="/css/class.css?v1.0.3">
 	<link rel="stylesheet" href="/css/media.css?v1.0.2">
 	<link rel="stylesheet" href="/css/scrollbar.css?v1.0.2">
 
-	<script src="/js/app.js?v1.0.2" defer></script>
+	<script src="/js/app.js?v1.0.3" defer></script>
 </head>
 <body>
-	<div class="fColumn limit-size">
+	<div id="contextmenu" class="p absolute hide" data-z="100" data-pSize="1rem">
+		<ul>
+			<li>
+				<button onclick="">Тест</button>
+			</li>
+		</ul>
+	</div>
+
+	<div class="fColumn limitSize">
 		<header>
 			<ul>
 				<li>
-					<i class="icon1-5rem">
+					<i data-iSize="1.5rem">
 						<svg><use xlink:href="#"></use></svg>
 					</i>
 				</li>
 
 				<li>
-					<i class="icon1-5rem">
+					<i data-iSize="1.5rem">
 						<svg><use xlink:href="#"></use></svg>
 					</i>
 				</li>
@@ -70,32 +78,32 @@ xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 				<div class="avatar__website">
 					<ul>
 						<li>
-							<a href="https://vk.com/niktox2" target="_blank">
-								<i class="icon1-5rem">
+							<a target="_blank" href="https://vk.com/niktox2">
+								<i data-iSize="1.5rem">
 									<svg><use xlink:href="#svgIconVK"></use></svg>
 								</i>
 							</a>
 						</li>
 
 						<li>
-							<a href="https://steamcommunity.com/id/niktox2" target="_blank">
-								<i class="icon1-5rem">
+							<a target="_blank" href="https://steamcommunity.com/id/niktox2">
+								<i data-iSize="1.5rem">
 									<svg><use xlink:href="#svgIconSteam"></use></svg>
 								</i>
 							</a>
 						</li>
 
 						<li>
-							<a href="https://www.kinopoisk.ru/user/80666580/" target="_blank">
-								<i class="icon1-5rem">
+							<a target="_blank" href="https://www.kinopoisk.ru/user/80666580/">
+								<i data-iSize="1.5rem">
 									<svg><use xlink:href="#svgIconKinopoisk"></use></svg>
 								</i>
 							</a>
 						</li>
 
 						<li>
-							<a href="https://shikimori.one/NiktoX2" target="_blank">
-								<i class="icon1-5rem">
+							<a target="_blank" href="https://shikimori.one/NiktoX2">
+								<i data-iSize="1.5rem">
 									<svg><use xlink:href="#svgIconShikimori"></use></svg>
 								</i>
 							</a>
@@ -106,29 +114,19 @@ xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
 			<div class="info">
 				<div class="info__name">
-					<h6 style="font-size: 1.5rem;">Мустафин Руслан | NiktoX2</h6>
-				</div>
+					<ul class="fColumn ulMTop" data-ulMSize="0.5rem">
+						<li>
+							<h6 style="font-size: 1.5rem;">Мустафин Руслан | NiktoX2</h6>
+						</li>
 
-				<div class="info__slider">
-					<button></button>
-
-					<div>
-						<ul class="absolute">
-							<li>
-								<span style="background-image: url('/images/avatar/NiktoX2.jpg');"></span>
-							</li>
-
-							<li>
-								<span style="background-image: url('/images/avatar/avatar.jpg');"></span>
-							</li>
-						</ul>
-					</div>
-
-					<button></button>
+						<li>
+							<p>Carpe diem / Лови мгновение</p>
+						</li>
+					</ul>
 				</div>
 
 				<div class="info__about">
-					<ul class="fColumn ulMTop05rem">
+					<ul class="fColumn ulMTop" data-ulMSize="0.5rem">
 						<li>
 							<p>Другие имена: Руся / Никто / Лис / Лисенок</p>
 						</li>
@@ -159,10 +157,58 @@ xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 					</ul>
 				</div>
 
+				<div class="info__slider">
+					<button class="hide">
+						<i data-iSize="1.5rem">
+							<svg><use xlink:href="#"></use></svg>
+						</i>
+					</button>
+
+					<div>
+						<ul class="absolute">
+							<li>
+								<span style="background-image: url('/images/avatar/NiktoX2.jpg');"></span>
+							</li>
+
+							<li>
+								<span style="background-image: url('/images/avatar/avatar.jpg');"></span>
+							</li>
+						</ul>
+					</div>
+
+					<button class="hide">
+						<i data-iSize="1.5rem">
+							<svg><use xlink:href="#"></use></svg>
+						</i>
+					</button>
+				</div>
+
+				<div class="indo__activity fColumn">
+					<h6>Работы (приостановлены и в разработке)</h6>
+
+					<ul class="mTop fColumn ulMTop" data-mSize="0.5rem" data-ulMSize="0.5rem">
+						<li>
+							<p>lostsummertime.html (шаблон)</p>
+						</li>
+
+						<li>
+							<p>lostsummertime.php (шаблон)</p>
+						</li>
+
+						<li>
+							<p>lostsummertime.css (готовые классы)</p>
+						</li>
+
+						<li>
+							<p>lostsummertime.js (наподобие jquery)</p>
+						</li>
+					</ul>
+				</div>
+
 				<div class="indo__activity fColumn">
 					<h6>Деятельность (приостановлена)</h6>
 
-					<ul class="fColumn mTop05rem ulMTop05rem">
+					<ul class="mTop fColumn ulMTop" data-mSize="0.5rem" data-ulMSize="0.5rem">
 						<li>
 							<p>Основатель Lost Summer Time</p>
 						</li>
@@ -188,7 +234,7 @@ xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 				<div class="indo__plans fColumn">
 					<h6>Планы (приостановлены)</h6>
 
-					<ul class="fColumn mTop05rem ulMTop05rem">
+					<ul class="mTop fColumn ulMTop" data-mSize="0.5rem" data-ulMSize="0.5rem">
 						<li>
 							<p>Написать личный и Lost Summer Time сайт</p>
 						</li>
@@ -226,16 +272,76 @@ xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 				<div class="info__music fColumn">
 					<h6>Любимая музыка</h6>
 
-					<ul class="fColumn mTop05rem">
+					<ul class="mTop fColumn" data-mSize="0.5rem">
 						<li style="align-items: center;">
 							<p>Чернила — Thomas Mraz</p>
 
-							<ul class="fColumn" style="margin-left: 0.5rem;">
+							<ul class="mLeft" data-mSize="0.5rem">
 								<li>
-									<a href="https://vk.com/search?c%5Bname%5D=0&c%5Bq%5D=%D0%A7%D0%B5%D1%80%D0%BD%D0%B8%D0%BB%D0%B0%20%E2%80%94%20Thomas%20Mraz&c%5Bsection%5D=audio" target="_blank">
-										<i class="icon1-5rem">
+									<a target="_blank" href="https://vk.com/search?c%5Bname%5D=0&c%5Bq%5D=%D0%A7%D0%B5%D1%80%D0%BD%D0%B8%D0%BB%D0%B0%20%E2%80%94%20Thomas%20Mraz&c%5Bsection%5D=audio">
+										<i data-iSize="1.5rem">
 											<svg><use xlink:href="#svgIconVK"></use></svg>
 										</i>
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+
+				<div class="info__ fColumn">
+					<h6>Любимые книги</h6>
+
+					<ul class="mTop fColumn ulMTop" data-mSize="0.5rem" data-ulMSize="0.5rem">
+						<li>
+							<p></p>
+
+							<ul class="mLeft" data-mSize="0.5rem">
+								<li>
+									<a target="_blank" href="">
+										<i></i>
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+
+				<div class="info__ fColumn">
+					<h6>Любимая манга</h6>
+
+					<ul class="mTop fColumn ulMTop" data-mSize="0.5rem" data-ulMSize="0.5rem">
+						<li>
+							<p>Аннарасуманара</p>
+
+							<ul class="mLeft" data-mSize="0.5rem">
+								<li>
+									<a target="_blank" href="">
+										<i></i>
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<p>Поднятие уровня в одиночку</p>
+
+							<ul class="mLeft" data-mSize="0.5rem">
+								<li>
+									<a target="_blank" href="">
+										<i></i>
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<p>Цвета счастья в одной комнате</p>
+
+							<ul class="mLeft" data-mSize="0.5rem">
+								<li>
+									<a target="_blank" href="">
+										<i></i>
 									</a>
 								</li>
 							</ul>
@@ -246,14 +352,14 @@ xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 				<div class="info__movies fColumn">
 					<h6>Любимые фильмы</h6>
 
-					<ul class="fColumn mTop05rem">
+					<ul class="mTop fColumn" data-mSize="0.5rem">
 						<li style="align-items: center;">
 							<p>Железный человек</p>
 
-							<ul class="fColumn" style="margin-left: 0.5rem;">
+							<ul class="mLeft" data-mSize="0.5rem">
 								<li>
-									<a href="https://www.kinopoisk.ru/film/61237/" target="_blank">
-										<i class="icon1-5rem">
+									<a target="_blank" href="https://www.kinopoisk.ru/film/61237/">
+										<i data-iSize="1.5rem">
 											<svg><use xlink:href="#svgIconKinopoisk"></use></svg>
 										</i>
 									</a>
@@ -266,16 +372,52 @@ xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 				<div class="info__series fColumn">
 					<h6>Любимые сериалы</h6>
 
-					<ul class="fColumn mTop05rem">
+					<ul class="mTop fColumn" data-mSize="0.5rem">
 						<li style="align-items: center;">
 							<p>Доктор Хаус</p>
 
-							<ul class="fColumn" style="margin-left: 0.5rem;">
+							<ul class="mLeft" data-mSize="0.5rem">
 								<li>
-									<a href="https://www.kinopoisk.ru/series/178710/" target="_blank">
-										<i class="icon1-5rem">
+									<a target="_blank" href="https://www.kinopoisk.ru/series/178710/">
+										<i data-iSize="1.5rem">
 											<svg><use xlink:href="#svgIconKinopoisk"></use></svg>
 										</i>
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+
+				<div class="info__ fColumn">
+					<h6>Любимые дорамы</h6>
+
+					<ul class="mTop fColumn" data-mSize="0.5rem">
+						<li>
+							<p>Призрачный доктор</p>
+
+							<ul class="mLeft" data-mSize="0.5rem">
+								<li>
+									<a target="_blank" href="">
+										<i></i>
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+
+				<div class="info__ fColumn">
+					<h6>Любимые мультфильмы</h6>
+
+					<ul class="mTop fColumn" data-mSize="0.5rem">
+						<li>
+							<p>Зверополис</p>
+
+							<ul class="mLeft" data-mSize="0.5rem">
+								<li>
+									<a target="_blank" href="">
+										<i></i>
 									</a>
 								</li>
 							</ul>
@@ -286,13 +428,57 @@ xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 				<div class="info__anime fColumn">
 					<h6>Любимое аниме</h6>
 
-					<ul class="fColumn mTop05rem ulMTop05rem">
+					<ul class="mTop fColumn ulMTop" data-mSize="0.5rem" data-ulMSize="0.5rem">
 						<li>
 							<p>Аватар короля</p>
+
+							<ul class="mLeft" data-mSize="0.5rem">
+								<li>
+									<a target="_blank" href="https://shikimori.one/animes/33926-quanzhi-gaoshou">
+										<i data-iSize="1.5rem">
+											<svg><use xlink:href="#svgIconShikimori"></use></svg>
+										</i>
+									</a>
+								</li>
+							</ul>
 						</li>
 
 						<li>
 							<p>Агент времени</p>
+
+							<ul class="mLeft" data-mSize="0.5rem">
+								<li>
+									<a target="_blank" href="https://shikimori.one/animes/44074-shiguang-dailiren">
+										<i data-iSize="1.5rem">
+											<svg><use xlink:href="#svgIconShikimori"></use></svg>
+										</i>
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<p>Некий научный акселератор</p>
+
+							<ul class="mLeft" data-mSize="0.5rem">
+								<li>
+									<a target="_blank" href="https://shikimori.one/animes/38480-toaru-kagaku-no-accelerator">
+										<i data-iSize="1.5rem">
+											<svg><use xlink:href="#svgIconShikimori"></use></svg>
+										</i>
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+
+				<div class="info__ fColumn">
+					<h6>До чего вы скорей всего не дойдете</h6>
+
+					<ul class="mTop fColumn ulMTop" data-mSize="0.5rem" data-ulMSize="0.5rem">
+						<li>
+							<p>Согласитесь, когда вы что-то делаете, а ваша вторая половинка вас обнимает сзади, это же очень приятно</p>
 						</li>
 					</ul>
 				</div>
@@ -302,7 +488,7 @@ xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 		<footer>
 			<ul class="fColumn">
 				<li>
-					<p>V1.0.2</p>
+					<p>V1.0.3</p>
 				</li>
 
 				<li>
@@ -312,7 +498,7 @@ xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 		</footer>
 	</div>
 
-	<div class="hide">
+	<div class="svgIcon hide">
 		<svg>
 <!--
 	google icon

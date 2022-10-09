@@ -10,8 +10,18 @@
 
 window.ondragstart = () => { return false };
 
-document.querySelector(".info__slider").querySelectorAll("li").forEach( (item) => {
+document.querySelectorAll(".info__slider li").forEach( (item) => {
 	item.addEventListener("click", () => {
 		document.querySelector("#avatar").style.backgroundImage = item.querySelector("span").style.backgroundImage;
 	})
-} )
+})
+/*
+document.addEventListener("contextmenu", (e) => {
+	document.getElementById("contextmenu").style.left = `${e.pageX}px`;
+	document.getElementById("contextmenu").style.top = `${e.pageY}px`;
+
+	document.getElementById("contextmenu").classList.toggle("hide");
+
+	e.preventDefault();
+}, false);
+*/
