@@ -12,6 +12,7 @@
 
 @media screen and (max-width: 725px) {
 	main {
+		height: -moz-fit-content;
 		height: fit-content;
 		flex-direction: column;
 		align-items: center;

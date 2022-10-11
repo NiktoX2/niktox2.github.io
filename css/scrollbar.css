@@ -21,3 +21,8 @@
 	border: transparent solid 5px;
 	border-radius: 1rem;
 }
+
+* {
+	scrollbar-width: thin;
+	scrollbar-color: var(--color) transparent;
+}

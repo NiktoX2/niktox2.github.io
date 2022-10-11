@@ -1,19 +1,7 @@
 {
-	"_comment": "https://www.w3.org/TR/appmanifest/",
 	"lang": "ru",
 	"dir": "ltr",
 	"name": "NiktoX2 - Мустафин Руслан",
 	"short_name": "NiktoX2",
-	"icons": [{
-		"src": "",
-		"sizes": "",
-		"type": ""
-	}],
-	"scope": "/",
-	"id": "",
-	"start_url": "/",
-	"display": "",
-	"orientation": "",
-	"theme_color": "",
-	"background_color": ""
+	"start_url": "/"
 }
